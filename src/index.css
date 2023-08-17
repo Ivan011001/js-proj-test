@@ -1,0 +1,218 @@
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+label {
+  display: inline-block;
+  position: relative;
+}
+select {
+  display: flex;
+  padding: 14px 18px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 15px;
+  border: 1px solid rgba(5, 5, 5, 0.2);
+}
+
+.section-container {
+  /* background-color: lightgray; */
+  margin: 0 auto;
+}
+
+.food-recipes-section {
+  padding: 100px 0;
+}
+
+@media (min-width: 1280px) {
+  .section-container {
+    width: 1280px;
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .section-container {
+    width: 704px;
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-container {
+    width: 335px;
+    padding: 0 20px;
+  }
+}
+
+.food-recipes-container {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+}
+
+.side-part-wrapper {
+  width: 235px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.search-categories-container {
+}
+
+.search-all-categories-btn {
+  display: inline-flex;
+  padding: 14px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px solid rgba(5, 5, 5, 0.2);
+
+  margin-bottom: 42px;
+}
+
+.search-all-categories-btn:hover,
+.search-all-categories-btn:focus {
+  background-color: #9bb537;
+  color: #fff;
+}
+
+.search-categories-list {
+  height: 416px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.search-categories-button {
+  color: rgba(5, 5, 5, 0.3);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 125%;
+
+  border: 0;
+  background-color: transparent;
+}
+
+.search-categories-button:hover,
+.search-categories-button:focus {
+  color: #9bb537;
+}
+
+.search-categories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.popular-recipes-title {
+  color: #050505;
+  font-weight: 600;
+  line-height: 116.67%;
+  text-transform: uppercase;
+
+  margin-bottom: 32px;
+}
+
+.popular-recipes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.popular-recipes-list-item {
+  display: flex;
+  gap: 16px;
+}
+.popular-recipes-list-item-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 10px;
+}
+.popular-recipes-list-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.popular-recipes-list-item-title {
+  color: #050505;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 128.57%;
+  text-transform: uppercase;
+}
+.popular-recipes-list-item-description {
+  overflow: hidden;
+  color: rgba(5, 5, 5, 0.8);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.main-part-wrapper {
+  flex-grow: 1;
+}
+
+.seacrh-props-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-prop-title {
+  color: rgba(5, 5, 5, 0.5);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 128.57%;
+
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
+
+#dish-name {
+  display: flex;
+  width: 278px;
+  padding: 14px 122px 14px 18px;
+  align-items: flex-start;
+  gap: 32px;
+
+  border-radius: 15px;
+  border: 1px solid rgba(5, 5, 5, 0.2);
+}
+
+.recipe-gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.gallery-list-item {
+  max-width: 250px;
+  height: 287px;
+  background-color: red;
+}

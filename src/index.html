@@ -4,22 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
-    <script type="module" src="./index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <script type="module" defer src="./index.js"></script>
   </head>
   <body>
-    <div class="section-container">
-      <div class="search-part-wrapper">
-        <div class="search-categories-container">
-          <button class="search-all-categories" type="submit">
-            All categories
-          </button>
-          <ul class="search-categories-list"></ul>
+    <section class="food-recipes-section">
+      <div class="food-recipes-container section-container">
+        <div class="side-part-wrapper">
+          <div class="search-categories-container">
+            <button class="search-all-categories-btn" type="submit">
+              All categories
+            </button>
+            <ul class="search-categories-list"></ul>
+          </div>
+          <div class="popular-recipes-container">
+            <h2 class="popular-recipes-title">Popular recipes</h2>
+            <ul class="popular-recipes-list"></ul>
+          </div>
         </div>
-        <div class="popular-recipes-container">
-          <h2 class="popular-recipes-title">Popular recipes</h2>
-          <ul class="popular-recipes-list"></ul>
+        <div class="main-part-wrapper">
+          <div class="seacrh-props-container">
+            <label>
+              <p class="search-prop-title">Seacrh</p>
+              <input
+                type="text"
+                name="dishName"
+                id="dish-name"
+                placeholder="Enter Text"
+              />
+            </label>
+            <label>
+              <p class="search-prop-title">Time</p>
+              <select type="text" name="dishTime" id="dish-time">
+                <option value="" selected disabled>0 min</option>
+              </select>
+            </label>
+            <label>
+              <p class="search-prop-title">Area</p>
+              <select type="text" name="dishArea" id="dish-area">
+                <option value="" selected disabled>Country</option>
+              </select>
+            </label>
+            <label>
+              <p class="search-prop-title">Ingredient</p>
+              <select type="text" name="dishIngredient" id="dish-ingredient">
+                <option value="" selected disabled>Product</option>
+              </select>
+            </label>
+          </div>
+          <ul class="recipe-gallery-list"></ul>
         </div>
       </div>
-    </div>
+    </section>
   </body>
 </html>
